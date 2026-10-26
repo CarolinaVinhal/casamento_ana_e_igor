@@ -1,0 +1,74 @@
+# Blueprint do Render: cria os DOIS serviços certos de uma vez.
+# No Render: New -> Blueprint -> escolha o repositório casamento_ana_e_igor.
+#
+#  1) casamento-ana-e-igor-site  -> o site (Static Site: grátis, não "dorme", é onde entra o seu domínio)
+#  2) api-casamento-ana-e-igor   -> a API em Python (Web Service grátis) ligada ao banco Neon
+services:
+  # ---------------------------------------------------------------- SITE
+  - type: web
+    name: casamento-ana-e-igor-site
+    runtime: static
+    # Publica só os arquivos do site (a pasta backend, com a lista de convidados, NÃO vai para o ar)
+    buildCommand: >-
+      rm -rf public && mkdir public &&
+      cp index.html admin.html livro.html styles.css livro.css app.js admin.js livro.js api-config.js public/ &&
+      cp -r assets public/
+    staticPublishPath: public
+    headers:
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://api.qrserver.com https://images.unsplash.com; media-src 'self'; frame-src https://maps.google.com https://www.google.com https://open.spotify.com; connect-src 'self' https://*.onrender.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*
+        name: Permissions-Policy
+        value: camera=(), microphone=(), geolocation=()
+      - path: /admin.html
+        name: X-Robots-Tag
+        value: noindex, nofollow
+      - path: /admin.html
+        name: Cache-Control
+        value: no-store
+      - path: /livro.html
+        name: X-Robots-Tag
+        value: noindex, nofollow
+
+  # ---------------------------------------------------------------- API
+  - type: web
+    name: api-casamento-ana-e-igor
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: DATABASE_URL
+        sync: false        # cole a connection string do Neon
+      - key: ADMIN_TOKEN
+        generateValue: true  # o Render cria uma senha forte; veja em Environment
+      - key: ALLOWED_ORIGINS
+        sync: false        # ex.: https://seudominio.com.br,https://www.seudominio.com.br,https://casamento-ana-e-igor-site.onrender.com
+      - key: TRUST_PROXY
+        value: "true"
+      - key: ENABLE_DOCS
+        value: "false"
+      - key: PENDING_HOURS
+        value: "48"
+      - key: PIX_KEY
+        value: "+5561991760206"
+      - key: PIX_MERCHANT_NAME
+        value: Ana Beatriz e Igor
+      - key: PIX_MERCHANT_CITY
+        value: BRASILIA
+      - key: COUPLE_PHONE
+        value: "5561992894788"

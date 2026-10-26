@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Livro de Recados · Ana Beatriz & Igor</title>
+  <link rel="stylesheet" href="livro.css">
+</head>
+<body>
+  <div class="toolbar no-print">
+    <span id="status">Carregando mensagens...</span>
+    <button id="btnPrint" disabled>Salvar como PDF</button>
+  </div>
+
+  <section class="page cover">
+    <img src="assets/identidade/monograma.png" alt="" class="cover-monogram">
+    <p class="script">Livro de Recados</p>
+    <h1>Ana Beatriz & Igor</h1>
+    <p class="date">07 · 08 · 2027</p>
+    <img src="assets/identidade/coracoes.png" alt="" class="cover-hearts">
+    <p class="cover-note">Todo o carinho que recebemos de quem amamos, guardado para sempre.</p>
+    <img src="assets/identidade/dog_bela.png" class="corner-dog left" alt="">
+    <img src="assets/identidade/dog_costela.png" class="corner-dog right" alt="">
+  </section>
+
+  <section class="page" id="secMural">
+    <h2><img src="assets/identidade/envelope.png" alt=""> Recados do Mural</h2>
+    <div class="cards" id="mural"></div>
+  </section>
+
+  <section class="page" id="secPresentes">
+    <h2><img src="assets/identidade/laco.png" alt=""> Mensagens dos Presentes</h2>
+    <div class="cards" id="presentes"></div>
+  </section>
+
+  <section class="page" id="secConvidados">
+    <h2><img src="assets/identidade/taca_torre.png" alt=""> Quem celebrou com a gente</h2>
+    <ul class="guests" id="convidados"></ul>
+    <div class="closing">
+      <img src="assets/identidade/rosa.png" alt="">
+      <p class="script">Obrigado por fazerem parte da nossa história.</p>
+      <p>Com amor, Ana Beatriz & Igor</p>
+    </div>
+  </section>
+
+  <script src="api-config.js"></script>
+  <script src="livro.js"></script>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casamento Ana Beatriz & Igor | 07/08/2027 - Brasília/DF</title>
+  <meta name="description" content="Site oficial do casamento de Ana Beatriz e Igor. Confirmação de presença, localização do evento em Brasília/DF, nossa história e lista de presentes.">
+
+  <!-- Prévia bonita quando o link for compartilhado no WhatsApp / Instagram -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Casamento Ana Beatriz & Igor · 07/08/2027">
+  <meta property="og:description" content="Confirme sua presença, veja o local e escolha um presente.">
+  <meta property="og:image" content="assets/fotos/og.jpg">
+  <meta name="theme-color" content="#661C1D">
+  <link rel="icon" type="image/png" href="assets/identidade/monograma_small.png">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVEGAÇÃO
+       ========================================================================== -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#hero" class="logo-couple" id="logoCouple" aria-label="Ana Beatriz e Igor - início">
+        <img src="assets/identidade/monograma_small.png" alt="" class="logo-monogram">
+        <span class="logo-names">Ana Beatriz <span class="amp">&</span> Igor</span>
+        <img src="assets/identidade/coracoes.png" alt="" class="logo-heart">
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#nossa-historia">Nossa História</a></li>
+          <li><a href="#localizacao">Local & Traje</a></li>
+          <li><a href="#confirmar">Confirmar Presença</a></li>
+          <li><a href="#presentes">Lista de Presentes</a></li>
+          <li><a href="#mural">Mural de Recados</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       PLAYLIST DO SPOTIFY (abre um mini player com a playlist dos noivos)
+       ========================================================================== -->
+  <div class="music-sticky-bar" id="musicBar" hidden>
+    <button class="music-btn" id="musicToggleBtn" aria-expanded="false" aria-controls="spotifyPanel">
+      <i class="fab fa-spotify"></i>
+      <span>Nossa playlist</span>
+    </button>
+  </div>
+  <div class="spotify-panel" id="spotifyPanel" hidden>
+    <button class="spotify-close" id="spotifyClose" aria-label="Fechar playlist">&times;</button>
+    <iframe id="spotifyFrame" title="Playlist do casamento no Spotify" width="100%" height="352" frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <!-- ==========================================================================
+       SEÇÃO CAPA (HERO COM CARROSSEL)
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <!-- Fotos de fundo: prefira fotos de corpo inteiro / paisagem (o rosto fica pequeno) -->
+    <div class="hero-carousel">
+      <div class="carousel-slide active" style="background-image: url('assets/fotos/capa01.jpg'); background-position: center 85%;"></div>
+      <div class="carousel-slide" style="background-image: url('assets/fotos/capa02.jpg'); background-position: center 55%;"></div>
+      <div class="carousel-slide" style="background-image: url('assets/fotos/capa03.jpg'); background-position: center 70%;"></div>
+      <div class="carousel-slide" style="background-image: url('assets/fotos/capa04.jpg'); background-position: center 75%;"></div>
+      <div class="carousel-slide" style="background-image: url('assets/fotos/capa05.jpg'); background-position: center 65%;"></div>
+      <div class="carousel-slide" style="background-image: url('assets/fotos/capa06.jpg'); background-position: center 60%;"></div>
+      <div class="carousel-slide" style="background-image: url('assets/fotos/capa07.jpg'); background-position: center 80%;"></div>
+      <div class="carousel-slide" style="background-image: url('assets/fotos/capa08.jpg'); background-position: center 45%;"></div>
+    </div>
+
+    <div class="hero-content">
+      <img src="assets/identidade/monograma.png" alt="Monograma A & I" class="hero-monogram">
+      <p class="hero-sub">Nosso Grande Dia</p>
+      <h1 class="hero-title">Ana Beatriz <span class="amp">&</span> Igor</h1>
+      <p class="hero-lead">Vamos celebrar a nossa união com quem mais amamos!</p>
+
+      <div class="hero-details-bar">
+        <div class="hero-detail-item">
+          <i class="far fa-calendar-alt"></i>
+          <span>07 de Agosto de 2027</span>
+        </div>
+        <div class="hero-detail-item">
+          <i class="far fa-clock"></i>
+          <span>16:30</span>
+        </div>
+        <div class="hero-detail-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Port Vittoria, Brasília/DF</span>
+        </div>
+      </div>
+
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div><strong id="cdDays">--</strong><span>dias</span></div>
+        <div><strong id="cdHours">--</strong><span>horas</span></div>
+        <div><strong id="cdMinutes">--</strong><span>min</span></div>
+        <div><strong id="cdSeconds">--</strong><span>seg</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       NOSSA HISTÓRIA
+       ========================================================================== -->
+  <section class="section-padding history-section" id="nossa-historia">
+    <div class="container">
+      <div class="section-header">
+        <span class="font-script section-kicker">Como tudo começou</span>
+        <h2>Nossa História</h2>
+        <img src="assets/identidade/laco.png" alt="" class="section-ornament">
+      </div>
+
+      <div class="history-grid">
+        <div class="history-card">
+          <h3>Friends to lovers</h3>
+          <p>A nossa história começou com uma amizade. Nos conhecemos na faculdade e, entre conversas, risadas e tantos momentos compartilhados, fomos nos tornando cada vez mais próximos. Para quem ama livros como a noiva, não poderia existir uma <em>trope</em> mais perfeita para a nossa história do que <em>friends to lovers</em>: quando o amor nasce de uma amizade e, de repente, aquela pessoa que já era tão importante se torna o seu lugar favorito no mundo.</p>
+          <p>Desde então, foram anos namorando, crescendo e construindo uma vida juntos. Ele veio de Goiânia para Brasília e, com o tempo, até a família veio também. Ela passou um ano e meio em Aracaju, e nós aprendemos que algumas fases podem até nos colocar em lugares diferentes, mas não mudam o que escolhemos construir lado a lado.</p>
+          <p>No caminho, também fomos descobrindo os universos um do outro. Ela, apaixonada por livros, filmes e séries, apresentou a ele o prazer de se perder em histórias — começando por uma missão quase impossível: fazê-lo assistir a todos os filmes de Harry Potter. Ele talvez não soubesse, mas estava prestes a descobrir que amar alguém também é acabar gostando um pouquinho de tudo aquilo que faz os olhos dessa pessoa brilharem.</p>
+          <p>E foi em Paris, diante da Torre Eiffel, que ele fez a pergunta que transformaria mais uma vez a nossa história. Depois de tantos capítulos vividos, o pedido de casamento parecia a continuação mais bonita possível para uma história que começou com amizade.</p>
+          <p>Hoje, seguimos escrevendo a nossa própria história. E, se nos livros existe um final feliz, o nosso preferido é saber que, na vida real, esse é só o começo.</p>
+          <p class="history-signature">Ana Beatriz & Igor</p>
+          <img class="history-end-heart" src="assets/identidade/coracoes_cadeado.png" alt="Corações entrelaçados">
+          <img src="assets/identidade/dog_bela.png" class="dog-doodle-corner" alt="">
+          <button class="hidden-treat" data-treat="1" style="top: 14px; right: 16px;" aria-label="Petisco escondido">🦴</button>
+        </div>
+
+        <div class="history-photo-gallery">
+          <div class="history-photo-frame main-frame">
+            <img src="assets/fotos/foto01.jpg" alt="Ana Beatriz e Igor" id="historyMainImg">
+            <button class="gallery-nav prev" id="galleryPrev" aria-label="Foto anterior">&#8249;</button>
+            <button class="gallery-nav next" id="galleryNext" aria-label="Próxima foto">&#8250;</button>
+            <span class="gallery-counter" id="galleryCounter">1 / 19</span>
+          </div>
+          <div class="history-thumbs" id="historyThumbs">
+            <img src="assets/fotos/thumbs/foto01.jpg" class="history-thumb active" data-photo="assets/fotos/foto01.jpg" alt="Lendo o The Wedding Times" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto02.jpg" class="history-thumb" data-photo="assets/fotos/foto02.jpg" alt="Beijinho no piquenique" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto03.jpg" class="history-thumb" data-photo="assets/fotos/foto03.jpg" alt="Risadas" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto04.jpg" class="history-thumb" data-photo="assets/fotos/foto04.jpg" alt="Olhar apaixonado" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto05.jpg" class="history-thumb" data-photo="assets/fotos/foto05.jpg" alt="Beijo com lanche" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto06.jpg" class="history-thumb" data-photo="assets/fotos/foto06.jpg" alt="Abraço no piquenique" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto07.jpg" class="history-thumb" data-photo="assets/fotos/foto07.jpg" alt="Abraço no jardim" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto08.jpg" class="history-thumb" data-photo="assets/fotos/foto08.jpg" alt="Em preto e branco" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto09.jpg" class="history-thumb" data-photo="assets/fotos/foto09.jpg" alt="Sorrisos" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto10.jpg" class="history-thumb" data-photo="assets/fotos/foto10.jpg" alt="Narizinho" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto11.jpg" class="history-thumb" data-photo="assets/fotos/foto11.jpg" alt="Luz do sol" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto12.jpg" class="history-thumb" data-photo="assets/fotos/foto12.jpg" alt="Mãos dadas" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto13.jpg" class="history-thumb" data-photo="assets/fotos/foto13.jpg" alt="Sorriso da noiva" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto14.jpg" class="history-thumb" data-photo="assets/fotos/foto14.jpg" alt="Nariz com nariz" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto15.jpg" class="history-thumb" data-photo="assets/fotos/foto15.jpg" alt="No caminho" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto16.jpg" class="history-thumb" data-photo="assets/fotos/foto16.jpg" alt="Beijo no gramado" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto17.jpg" class="history-thumb" data-photo="assets/fotos/foto17.jpg" alt="Save the date" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto18.jpg" class="history-thumb" data-photo="assets/fotos/foto18.jpg" alt="Beijo na cascata" tabindex="0" loading="lazy">
+            <img src="assets/fotos/thumbs/foto19.jpg" class="history-thumb" data-photo="assets/fotos/foto19.jpg" alt="Dança ao pôr do sol" tabindex="0" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LOCAL & TRAJE
+       ========================================================================== -->
+  <section class="section-padding location-section" id="localizacao">
+    <div class="container">
+      <div class="section-header">
+        <span class="font-script section-kicker">Onde & Quando</span>
+        <h2>Local & Traje</h2>
+        <p>Preparamos tudo com muito carinho para receber você!</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-info-card">
+          <div>
+            <div class="location-item">
+              <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4 class="location-title">Local da Festa</h4>
+                <p style="font-weight: 600;">Port Vittoria – Espaço de Eventos</p>
+                <p class="muted">Setor de Clubes Esportivos Sul, Trecho 2, Conjunto 19 – Asa Sul, Brasília – DF, 70200-002</p>
+                <div class="map-links">
+                  <a href="https://www.google.com/maps/search/?api=1&query=Port+Vittoria+SCES+Trecho+2+Conjunto+19+Bras%C3%ADlia+DF" target="_blank" rel="noopener"><i class="fab fa-google"></i> Google Maps</a>
+                  <a href="https://waze.com/ul?q=Port%20Vittoria%20SCES%20Trecho%202%20Conjunto%2019%20Bras%C3%ADlia&navigate=yes" target="_blank" rel="noopener"><i class="fab fa-waze"></i> Waze</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="location-item">
+              <div class="location-icon"><i class="far fa-clock"></i></div>
+              <div>
+                <h4 class="location-title">Data e horário</h4>
+                <p style="font-weight: 600;">07 de agosto de 2027, às 16:30</p>
+                <p class="muted">Recomendamos chegar com 15 min de antecedência</p>
+              </div>
+            </div>
+
+            <div class="location-item">
+              <div class="location-icon"><i class="fas fa-user-tie"></i></div>
+              <div>
+                <h4 class="location-title">Traje</h4>
+                <p style="font-weight: 600;">Passeio Completo</p>
+                <p class="muted" style="margin-bottom: 10px;">Terno para os cavalheiros e vestido longo para as damas</p>
+                <button type="button" class="btn-trajes-view" id="btnOpenTrajesModal">
+                  <i class="fas fa-tshirt"></i> Ver sugestões de traje
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <a href="#confirmar" class="btn-primary" style="margin-top: 20px;">
+            Confirmar Presença <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="map-container">
+          <iframe title="Mapa do Port Vittoria" src="https://maps.google.com/maps?q=Port%20Vittoria%2C%20SCES%20Trecho%202%20Conjunto%2019%2C%20Bras%C3%ADlia%20DF&z=15&output=embed" width="100%" height="380" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="cutie-banner">
+        <div class="cutie-item">
+          <img src="assets/identidade/champanhe.png" alt="">
+          <p>Vem de carro? Tem estacionamento no local</p>
+        </div>
+        <div class="cutie-item">
+          <img src="assets/identidade/dog_pacoca.png" alt="">
+          <p>Fique de olho no horário!</p>
+        </div>
+        <div class="cutie-item" style="position: relative;">
+          <img src="assets/identidade/aviao.png" alt="">
+          <p>Vem de fora de Brasília?</p>
+          <button class="hidden-treat" data-treat="2" style="top: -6px; right: -18px;" aria-label="Petisco escondido">🦴</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONFIRMAÇÃO DE PRESENÇA (por família / casal)
+       ========================================================================== -->
+  <section class="section-padding rsvp-section" id="confirmar">
+    <div class="container">
+      <div class="section-header">
+        <span class="font-script section-kicker">Sua presença é fundamental</span>
+        <h2>Confirmação de Presença</h2>
+        <p>Digite seu nome, escolha na lista e confirme por você e por quem veio no seu convite.</p>
+      </div>
+
+      <div class="rsvp-box">
+        <img src="assets/fotos/maos.jpg" alt="Mãos de Ana Beatriz e Igor se encontrando" class="rsvp-banner">
+        <div class="rsvp-summary">
+          <span><i class="fas fa-map-marker-alt"></i> Port Vittoria / DF</span>
+          <span><i class="far fa-calendar-alt"></i> 07/08/2027 às 16:30</span>
+        </div>
+
+        <form id="rsvpForm" novalidate autocomplete="off">
+          <div class="rsvp-form-group name-search">
+            <label for="guestName">Seu nome:</label>
+            <input type="text" id="guestName" class="rsvp-input" placeholder="Ex: Carolina Marques Vinhal" maxlength="120"
+              role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="nameSuggestions">
+            <ul class="name-suggestions" id="nameSuggestions" role="listbox" hidden></ul>
+            <span id="nameNotice" class="field-notice" aria-live="polite"></span>
+          </div>
+
+          <!-- Aparece depois de escolher o nome: todos do mesmo convite -->
+          <div class="rsvp-group" id="rsvpGroup" hidden>
+            <p class="rsvp-group-title">Quem vai com você? <small>Desmarque quem não poderá ir.</small></p>
+            <div id="rsvpMembers" class="rsvp-members"></div>
+            <button type="submit" id="btnRsvpSubmit" class="btn-primary">
+              <i class="fas fa-heart"></i> Confirmar presença
+            </button>
+          </div>
+        </form>
+        <button class="hidden-treat" data-treat="3" style="bottom: 10px; left: 14px;" aria-label="Petisco escondido">🦴</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LISTA DE PRESENTES
+       ========================================================================== -->
+  <section class="section-padding gifts-section" id="presentes">
+    <div class="container">
+      <div class="section-header">
+        <span class="font-script section-kicker">Mimos & Zoeiras</span>
+        <h2>Lista de Presentes</h2>
+        <p>Escolha um presente especial (ou divertido!) para ajudar Ana Beatriz e Igor a começarem essa nova fase.</p>
+        <p class="gifts-hint"><i class="fas fa-credit-card"></i> Pagamento via <strong>Pix</strong> ou <strong>cartão de crédito</strong>.</p>
+      </div>
+
+      <div class="gifts-filter-bar">
+        <div class="filter-row">
+          <div class="search-wrap">
+            <i class="fas fa-search"></i>
+            <input type="search" id="giftSearchInput" class="search-gift-input" placeholder="Buscar presente..." aria-label="Buscar presente">
+          </div>
+          <button type="button" class="filter-chip sort-chip" id="sortToggle" aria-label="Ordenar por preço">
+            <i class="fas fa-arrow-up-wide-short"></i> <span id="sortLabel">Menor preço</span>
+          </button>
+        </div>
+
+        <div class="filter-btn-group" role="group" aria-label="Filtrar por tipo">
+          <button class="filter-chip type-chip active" data-type="all">Todos</button>
+          <button class="filter-chip type-chip" data-type="casa"><i class="fas fa-couch"></i> Casa</button>
+          <button class="filter-chip type-chip" data-type="cozinha"><i class="fas fa-utensils"></i> Cozinha</button>
+          <button class="filter-chip type-chip" data-type="eletro"><i class="fas fa-plug"></i> Eletros</button>
+          <button class="filter-chip type-chip" data-type="viagem"><i class="fas fa-plane"></i> Lua de Mel</button>
+          <button class="filter-chip type-chip" data-type="zoeira"><i class="fas fa-face-grin-squint"></i> Diversão</button>
+        </div>
+
+        <div class="filter-btn-group" role="group" aria-label="Filtrar por faixa de preço">
+          <button class="filter-chip price-chip active" data-filter="all">Qualquer valor</button>
+          <button class="filter-chip price-chip" data-filter="low">Até R$ 500</button>
+          <button class="filter-chip price-chip" data-filter="mid">R$ 500 a R$ 1.000</button>
+          <button class="filter-chip price-chip" data-filter="high">Acima de R$ 1.000</button>
+        </div>
+
+        <div class="price-range">
+          <label for="priceMax">Até <strong id="priceMaxLabel">qualquer valor</strong></label>
+          <input type="range" id="priceMax" min="50" step="50" value="0">
+        </div>
+        <button class="hidden-treat" data-treat="4" style="bottom: 6px; right: 10px;" aria-label="Petisco escondido">🦴</button>
+      </div>
+
+      <p class="gifts-count" id="giftsCount" aria-live="polite"></p>
+      <div class="gifts-grid" id="giftsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MURAL DE RECADOS
+       ========================================================================== -->
+  <section class="section-padding guestbook-section" id="mural">
+    <div class="container">
+      <div class="section-header">
+        <span class="font-script section-kicker">Carinho em Palavras</span>
+        <h2>Mural de Recados</h2>
+        <p>Deixe sua mensagem para o casal e veja a resposta da nossa matilha!</p>
+      </div>
+
+      <div class="guestbook-container">
+        <div class="guestbook-form-card">
+          <h3 style="margin-bottom: 16px;">Deixar um recado</h3>
+          <form id="guestbookForm">
+            <div class="rsvp-form-group">
+              <label for="msgAuthor">Seu nome:</label>
+              <input type="text" id="msgAuthor" class="rsvp-input" required maxlength="80">
+            </div>
+            <div class="rsvp-form-group">
+              <label for="msgContent">Sua mensagem:</label>
+              <textarea id="msgContent" class="rsvp-input" rows="4" required maxlength="600"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Enviar mensagem
+            </button>
+          </form>
+        </div>
+
+        <div class="guestbook-messages-list" id="messagesList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MODAL GERAL (confirmações, agradecimentos)
+       ========================================================================== -->
+  <div class="modal-overlay" id="dogModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-x" data-close="dogModalOverlay" aria-label="Fechar">&times;</button>
+      <div class="modal-dog-img-frame">
+        <img id="modalDogImg" src="assets/identidade/dog_bela.png" class="modal-dog-img" alt="">
+      </div>
+      <h3 id="modalTitle" class="modal-title">Título</h3>
+      <p id="modalText" class="modal-text">Texto</p>
+      <div class="modal-actions" id="modalActions"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL DE PAGAMENTO (Pix ou cartão)
+       ========================================================================== -->
+  <div class="modal-overlay" id="paymentModalOverlay" role="dialog" aria-modal="true" aria-labelledby="payGiftTitle">
+    <div class="modal-card pay-card">
+      <button class="modal-x" data-close="paymentModalOverlay" aria-label="Fechar">&times;</button>
+      <img id="payGiftImg" class="pay-gift-img" src="" alt="">
+      <h3 id="payGiftTitle" class="modal-title">Presentear os Noivos</h3>
+      <p id="payGiftPrice" class="pay-price"></p>
+
+      <div class="pay-method-tabs" role="tablist">
+        <button type="button" class="pay-tab active" data-method="PIX" role="tab" aria-selected="true"><i class="fas fa-qrcode"></i> Pix</button>
+        <button type="button" class="pay-tab" data-method="CARTAO" role="tab" aria-selected="false"><i class="fas fa-credit-card"></i> Cartão de crédito</button>
+      </div>
+
+      <div class="pix-area" id="pixArea">
+        <p class="pix-step"><strong>1.</strong> Escaneie o QR Code no app do seu banco:</p>
+        <div id="pixQrCode" class="pix-qr" aria-label="QR Code Pix"></div>
+        <p class="pix-step"><strong>2.</strong> Ou use o Pix Copia e Cola:</p>
+        <div class="pix-code-box" id="pixCodeText"></div>
+        <div class="pix-buttons">
+          <button type="button" class="filter-chip" id="btnCopyPixCode"><i class="fas fa-copy"></i> Copiar código Pix</button>
+          <button type="button" class="filter-chip" id="btnCopyPixKey"><i class="fas fa-mobile-alt"></i> Copiar chave (celular)</button>
+        </div>
+        <p class="pix-key-line">Chave Pix (celular): <strong id="pixKeyDisplay"></strong></p>
+      </div>
+
+      <div class="card-area" id="cardArea" hidden>
+        <p class="pix-step">Pague com cartão de crédito pelo Mercado Pago (ambiente seguro, pode parcelar):</p>
+        <button type="button" class="btn-primary" id="btnCardPay"><i class="fas fa-credit-card"></i> Pagar com cartão via Mercado Pago</button>
+        <p class="pix-key-line"><small id="cardHint"></small></p>
+      </div>
+
+      <form id="paymentForm">
+        <div class="rsvp-form-group" style="text-align: left;">
+          <label for="payerName">Seu nome:</label>
+          <input type="text" id="payerName" class="rsvp-input" required maxlength="80">
+        </div>
+        <div class="rsvp-form-group" style="text-align: left;">
+          <label for="payerMessage">Mensagem para Ana Beatriz & Igor:</label>
+          <textarea id="payerMessage" class="rsvp-input" rows="2" maxlength="500"></textarea>
+        </div>
+        <button type="submit" class="btn-primary"><i class="fas fa-gift"></i> Já paguei! Confirmar presente</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL DE TRAJES
+       ========================================================================== -->
+  <div class="modal-overlay" id="trajesModalOverlay" role="dialog" aria-modal="true" aria-labelledby="trajesTitle">
+    <div class="modal-card trajes-modal-card">
+      <button class="modal-x" data-close="trajesModalOverlay" aria-label="Fechar">&times;</button>
+      <h3 class="modal-title" id="trajesTitle">Sugestões de Traje</h3>
+
+      <div class="unified-trajes-frame">
+        <div class="trajes-figures-side-by-side">
+          <div class="traje-figure-card">
+            <h4 class="traje-figure-title">Madrinhas</h4>
+            <p class="traje-figure-text">Vestido longo verde oliva</p>
+            <div class="traje-img-wrapper">
+              <img src="assets/traje_madrinha.jpg" alt="Vestido longo verde oliva" class="traje-figure-img">
+            </div>
+          </div>
+          <div class="traje-figure-card">
+            <h4 class="traje-figure-title">Padrinhos</h4>
+            <p class="traje-figure-text">Terno chumbo e gravata verde oliva</p>
+            <div class="traje-img-wrapper">
+              <img src="assets/traje_padrinho.jpg" alt="Terno chumbo e gravata verde oliva" class="traje-figure-img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="unified-trajes-frame">
+        <h4 class="traje-figure-title">Convidados · Passeio Completo</h4>
+        <p class="traje-figure-text">Vestido longo para as damas, terno para os cavalheiros</p>
+        <div class="trajes-convidados">
+          <img src="assets/traje_convidadas.jpg" alt="Inspirações de vestidos longos para convidadas">
+          <img src="assets/traje_convidados.jpg" alt="Inspirações de ternos para convidados">
+        </div>
+      </div>
+
+      <button class="btn-primary" id="btnCloseTrajesModal" style="margin-top: 16px;">Entendi!</button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       EASTER EGGS 🐾
+       ========================================================================== -->
+  <button class="peek-dog" id="peekDog" aria-label="Um cachorro está espiando você">
+    <img src="assets/matilha/espiando.jpg" alt="">
+  </button>
+  <div class="treat-counter" id="treatCounter" hidden>🦴 <span id="treatCount">0</span>/5</div>
+  <div class="dog-parade" id="dogParade" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo"><img src="assets/identidade/brilhos.png" alt=""></button>
+
+  <!-- RODAPÉ -->
+  <footer class="main-footer" id="rodape">
+    <div class="container">
+      <img src="assets/identidade/coracoes.png" alt="" class="footer-heart">
+      <img src="assets/identidade/monograma.png" alt="Monograma A & I" class="footer-monogram">
+      <h3 class="footer-title">Ana Beatriz & Igor</h3>
+      <p class="footer-lead">Contamos com a sua presença para celebrar esse momento tão especial com a gente!</p>
+      <p class="footer-contact"><a href="https://wa.me/5561992894788?text=Ol%C3%A1%2C%20Ana%20Beatriz%20e%20Igor!" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Fale com os noivos: (61) 99289-4788</a></p>
+      <p class="footer-secret">Dica: existem 5 ossinhos 🦴 escondidos neste site...</p>
+      <p class="footer-copy">© 2027 Todos os direitos reservados a Ana Beatriz & Igor.
+        <button class="hidden-treat inline" data-treat="5" aria-label="Petisco escondido">🦴</button>
+      </p>
+    </div>
+    <img src="assets/identidade/dog_extra2.png" alt="" class="footer-beagle" id="footerBeagle">
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="api-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

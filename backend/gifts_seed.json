@@ -1,0 +1,752 @@
+[
+ {
+  "id": 14,
+  "title": "Jogo de Cama 600 Fios",
+  "description": "Noites de sono aconchegantes para o casal.",
+  "price": 600,
+  "category": "mid",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/quarto_cama.jpg"
+ },
+ {
+  "id": 109,
+  "title": "Toalhas de Banho Trussardi para o Casal",
+  "description": "Toalhas macias e felpudas para o enxoval da casa nova.",
+  "price": 500,
+  "category": "low",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/toalhas.jpg"
+ },
+ {
+  "id": 122,
+  "title": "Roupão",
+  "description": "Para o dia de spa da noiva.",
+  "price": 350,
+  "category": "low",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/roupao.jpg"
+ },
+ {
+  "id": 106,
+  "title": "Kit de Banheiro",
+  "description": "Porta-escovas, saboneteira e dispenser combinando.",
+  "price": 300,
+  "category": "low",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/kit_banheiro.jpg"
+ },
+ {
+  "id": 107,
+  "title": "Tapete para a Sala",
+  "description": "Para a sala ficar aconchegante (e a matilha deitar).",
+  "price": 1500,
+  "category": "high",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/tapete.jpg"
+ },
+ {
+  "id": 120,
+  "title": "Sofá 4 Lugares Retrátil e Reclinável",
+  "description": "O sofá das maratonas de série do casal.",
+  "price": 2000,
+  "category": "high",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/sofa.jpg"
+ },
+ {
+  "id": 125,
+  "title": "Poltrona para a Varanda",
+  "description": "O cantinho do café e do pôr do sol.",
+  "price": 2100,
+  "category": "high",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/poltrona.jpg"
+ },
+ {
+  "id": 121,
+  "title": "Escrivaninha",
+  "description": "Para o escritório da casa nova.",
+  "price": 2700,
+  "category": "high",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/escrivaninha.jpg"
+ },
+ {
+  "id": 126,
+  "title": "Cadeira de Escritório",
+  "description": "Conforto para os dias de trabalho em casa.",
+  "price": 1600,
+  "category": "high",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/cadeira_escritorio.jpg"
+ },
+ {
+  "id": 117,
+  "title": "Vaso de Flor",
+  "description": "Para a noiva tentar manter as flores vivas.",
+  "price": 150,
+  "category": "low",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/vaso.jpg"
+ },
+ {
+  "id": 116,
+  "title": "Porta-Joias",
+  "description": "Para a noiva guardar todas as joias que o noivo der para ela.",
+  "price": 600,
+  "category": "mid",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/porta_joias.jpg"
+ },
+ {
+  "id": 11,
+  "title": "Adega Climatizada 12 Garrafas",
+  "description": "Vinho na temperatura certa para as noites a dois.",
+  "price": 1600,
+  "category": "high",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/adega.jpg"
+ },
+ {
+  "id": 12,
+  "title": "Kit de Taças de Cristal",
+  "description": "Para brindarmos aos melhores momentos com os amigos.",
+  "price": 250,
+  "category": "low",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/tacas.jpg"
+ },
+ {
+  "id": 17,
+  "title": "Garrafa do Vinho Favorito do Noivo",
+  "description": "Para brindar à nova fase.",
+  "price": 260,
+  "category": "low",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/vinho_primitivo.jpg"
+ },
+ {
+  "id": 32,
+  "title": "Kit Mesa Posta",
+  "description": "Taças, pratos e guardanapos para receber os amigos.",
+  "price": 500,
+  "category": "low",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/mesa_posta.jpg"
+ },
+ {
+  "id": 108,
+  "title": "Kit Pilates para a Noiva",
+  "description": "Bola, anel, elásticos e meias para a noiva treinar em casa.",
+  "price": 480,
+  "category": "low",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/kit_pilates.jpg"
+ },
+ {
+  "id": 115,
+  "title": "Kit de Halteres",
+  "description": "Para a academia em casa do noivo.",
+  "price": 450,
+  "category": "low",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/halteres.jpg"
+ },
+ {
+  "id": 110,
+  "title": "1 Ano de Academia para o Noivo ou a Noiva",
+  "description": "Pra entrar em forma depois do bolo do casamento.",
+  "price": 1200,
+  "category": "high",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/smartfit.jpg"
+ },
+ {
+  "id": 142,
+  "title": "Kit Videolaringoscópio para o Noivo",
+  "description": "Equipamento profissional para a carreira do noivo.",
+  "price": 4500,
+  "category": "high",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/videolaringoscopio.jpg"
+ },
+ {
+  "id": 100,
+  "title": "Set com 8 Panelas Ceramic Essential Le Creuset",
+  "description": "O jogo completo para a cozinha dos sonhos.",
+  "price": 9239,
+  "category": "high",
+  "type": "cozinha",
+  "multi": false,
+  "image_url": "assets/presentes/panelas_le_creuset.jpg"
+ },
+ {
+  "id": 7,
+  "title": "Panela Redonda Signature Le Creuset",
+  "description": "A panela de ferro esmaltado que dura a vida inteira.",
+  "price": 3869,
+  "category": "high",
+  "type": "cozinha",
+  "multi": false,
+  "image_url": "assets/presentes/panela_azul.jpg"
+ },
+ {
+  "id": 102,
+  "title": "Chaleira Clássica Le Creuset",
+  "description": "Para os chás da tarde com charme.",
+  "price": 929,
+  "category": "mid",
+  "type": "cozinha",
+  "multi": false,
+  "image_url": "assets/presentes/chaleira_le_creuset.jpg"
+ },
+ {
+  "id": 101,
+  "title": "Set com 4 Panelas Ceramic Essential Le Creuset",
+  "description": "O essencial Le Creuset para o dia a dia.",
+  "price": 3889,
+  "category": "high",
+  "type": "cozinha",
+  "multi": false,
+  "image_url": "assets/presentes/panelas_kit4.jpg"
+ },
+ {
+  "id": 15,
+  "title": "Aparelho de Jantar de Cerâmica",
+  "description": "Pratos elegantes para os jantares em família.",
+  "price": 800,
+  "category": "mid",
+  "type": "cozinha",
+  "multi": false,
+  "image_url": "assets/presentes/aparelho_jantar.jpg"
+ },
+ {
+  "id": 29,
+  "title": "Jogo de Chá com Filete Dourado",
+  "description": "Bule, xícaras e leiteira para os chás da tarde.",
+  "price": 450,
+  "category": "low",
+  "type": "cozinha",
+  "multi": false,
+  "image_url": "assets/presentes/jogo_cha.jpg"
+ },
+ {
+  "id": 104,
+  "title": "Boleira Camicado",
+  "description": "Para o bolo de domingo ficar sempre à mostra.",
+  "price": 350,
+  "category": "low",
+  "type": "cozinha",
+  "multi": false,
+  "image_url": "assets/presentes/boleira.jpg"
+ },
+ {
+  "id": 112,
+  "title": "Fruteira",
+  "description": "Fruta à vista, casal saudável.",
+  "price": 200,
+  "category": "low",
+  "type": "cozinha",
+  "multi": false,
+  "image_url": "assets/presentes/fruteira.jpg"
+ },
+ {
+  "id": 31,
+  "title": "Kit de Potes Herméticos",
+  "description": "Para a cozinha aesthetic da noiva.",
+  "price": 450,
+  "category": "low",
+  "type": "cozinha",
+  "multi": false,
+  "image_url": "assets/presentes/pote_vidro.jpg"
+ },
+ {
+  "id": 136,
+  "title": "Conjunto de Bowls de Inox Electrolux",
+  "description": "Tigelas de inox com tampa para a cozinha.",
+  "price": 100,
+  "category": "low",
+  "type": "cozinha",
+  "multi": false,
+  "image_url": "assets/presentes/bowls_inox.jpg"
+ },
+ {
+  "id": 18,
+  "title": "Jogo de Facas de Chef",
+  "description": "Facas de primeira para os churrascos de fim de semana.",
+  "price": 450,
+  "category": "low",
+  "type": "cozinha",
+  "multi": false,
+  "image_url": "assets/presentes/facas.jpg"
+ },
+ {
+  "id": 30,
+  "title": "Kit de Drinks",
+  "description": "Para receber os amigos com drinks caprichados.",
+  "price": 250,
+  "category": "low",
+  "type": "cozinha",
+  "multi": false,
+  "image_url": "assets/presentes/kit_coquetelaria.jpg"
+ },
+ {
+  "id": 27,
+  "title": "Cafeteira Italiana",
+  "description": "O cafezinho da tarde com cheiro de casa de vó.",
+  "price": 250,
+  "category": "low",
+  "type": "cozinha",
+  "multi": false,
+  "image_url": "assets/presentes/cafeteira_italiana.jpg"
+ },
+ {
+  "id": 143,
+  "title": "Smart TV Samsung 85\" Crystal UHD 4K",
+  "description": "U8600F 2025 com Xbox Cloud Gaming e Alexa integrada.",
+  "price": 6000,
+  "category": "high",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/smart_tv_85.jpg"
+ },
+ {
+  "id": 144,
+  "title": "Set com 6 Panelas Ceramic Essential Le Creuset",
+  "description": "Seis panelas para cozinhar a dois (ou para a família toda).",
+  "price": 6519,
+  "category": "high",
+  "type": "cozinha",
+  "multi": false,
+  "image_url": "assets/presentes/panelas_le_creuset_6.jpg"
+ },
+ {
+  "id": 135,
+  "title": "Geladeira Electrolux 484L 3 Portas",
+  "description": "Frost Free Inverter, Black Inox Look.",
+  "price": 5300,
+  "category": "high",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/geladeira.jpg"
+ },
+ {
+  "id": 134,
+  "title": "Lava e Seca LG Smart VC2 14kg",
+  "description": "Inox Look, com Inteligência Artificial AIDD™.",
+  "price": 4000,
+  "category": "high",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/lava_e_seca.jpg"
+ },
+ {
+  "id": 22,
+  "title": "Lava-Louças",
+  "description": "Pra acabar de vez com a briga de quem lava a louça.",
+  "price": 3500,
+  "category": "high",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/lava_loucas_inox.jpg"
+ },
+ {
+  "id": 123,
+  "title": "Cooktop Elétrico Philco Vitrocerâmico",
+  "description": "Cooktop PCT55VC de 5 bocas para cozinhar tudo ao mesmo tempo.",
+  "price": 1400,
+  "category": "high",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/cooktop.jpg"
+ },
+ {
+  "id": 124,
+  "title": "Smart TV Philips 58\" 4K",
+  "description": "Google TV, Wi-Fi, Bluetooth e Google Assistente.",
+  "price": 2800,
+  "category": "high",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/smart_tv.jpg"
+ },
+ {
+  "id": 20,
+  "title": "Soundbar JBL Cinema SB180 2.1",
+  "description": "Soundbar Bluetooth com subwoofer de 6,5\" sem fio.",
+  "price": 800,
+  "category": "mid",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/soundbar.jpg"
+ },
+ {
+  "id": 111,
+  "title": "Frigobar Brastemp Retrô",
+  "description": "Para os noivos guardarem as coquinhas zero.",
+  "price": 1700,
+  "category": "high",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/frigobar.jpg"
+ },
+ {
+  "id": 113,
+  "title": "Chopeira",
+  "description": "Para o noivo receber os convidados em grande estilo.",
+  "price": 1600,
+  "category": "high",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/chopeira.jpg"
+ },
+ {
+  "id": 21,
+  "title": "Batedeira Planetária",
+  "description": "Bolos, pães e massas caseiras.",
+  "price": 2800,
+  "category": "high",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/batedeira.jpg"
+ },
+ {
+  "id": 13,
+  "title": "Robô Aspirador de Pó",
+  "description": "Limpar os pelos da matilha sem esforço!",
+  "price": 1000,
+  "category": "mid",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "https://images.unsplash.com/photo-1762500824496-9094f37873c4?w=600&h=450&fit=crop&q=70&fm=jpg"
+ },
+ {
+  "id": 8,
+  "title": "Air Fryer Philco 6,5L",
+  "description": "Visor Glass e Redstone, 1700W.",
+  "price": 389.9,
+  "category": "low",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/airfryer_philco.jpg"
+ },
+ {
+  "id": 127,
+  "title": "Cafeteira Elétrica Electrolux 38 Xícaras",
+  "description": "Digital, programável e com timer.",
+  "price": 320,
+  "category": "low",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/cafeteira_eletrica.jpg"
+ },
+ {
+  "id": 9,
+  "title": "Cafeteira Espresso",
+  "description": "Espresso de cafeteria em casa.",
+  "price": 900,
+  "category": "mid",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/cafeteira_espresso.jpg"
+ },
+ {
+  "id": 19,
+  "title": "Liquidificador de Alta Potência",
+  "description": "Sucos, vitaminas e molhos todos os dias.",
+  "price": 400,
+  "category": "low",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&h=450&fit=crop&q=70&fm=jpg"
+ },
+ {
+  "id": 137,
+  "title": "Grill e Sanduicheira Philco",
+  "description": "Maxx Clean 1000W para lanches rapidinhos.",
+  "price": 250,
+  "category": "low",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/grill.jpg"
+ },
+ {
+  "id": 133,
+  "title": "Umidificador de Ar",
+  "description": "Para o clima seco de Brasília.",
+  "price": 650,
+  "category": "mid",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/umidificador.jpg"
+ },
+ {
+  "id": 138,
+  "title": "Alexa Echo Dot",
+  "description": "Alexa, toca a música do casamento!",
+  "price": 180,
+  "category": "low",
+  "type": "eletro",
+  "multi": false,
+  "image_url": "assets/presentes/echo_dot.jpg"
+ },
+ {
+  "id": 10,
+  "title": "Passagem da Noiva para a Itália",
+  "description": "Ida e volta Brasília–Roma para a lua de mel.",
+  "price": 5500,
+  "category": "high",
+  "type": "viagem",
+  "multi": false,
+  "image_url": "assets/presentes/aviao.jpg"
+ },
+ {
+  "id": 140,
+  "title": "Passagem do Noivo para a Itália",
+  "description": "Porque não dá pra ir sem ele, né?",
+  "price": 5500,
+  "category": "high",
+  "type": "viagem",
+  "multi": false,
+  "image_url": "assets/presentes/aviao.jpg"
+ },
+ {
+  "id": 141,
+  "title": "Hospedagem da Lua de Mel do Casal",
+  "description": "As noites da lua de mel com vista para o mar.",
+  "price": 7000,
+  "category": "high",
+  "type": "viagem",
+  "multi": false,
+  "image_url": "assets/presentes/amalfi.jpg"
+ },
+ {
+  "id": 38,
+  "title": "Jantar Romântico Pé na Areia",
+  "description": "Mesa na areia e pôr do sol.",
+  "price": 1200,
+  "category": "high",
+  "type": "viagem",
+  "multi": false,
+  "image_url": "assets/presentes/jantar_pe_na_areia.jpg"
+ },
+ {
+  "id": 34,
+  "title": "Passeio de Veleiro",
+  "description": "Uma tarde velejando em alto-mar.",
+  "price": 1500,
+  "category": "high",
+  "type": "viagem",
+  "multi": false,
+  "image_url": "assets/presentes/veleiro.jpg"
+ },
+ {
+  "id": 33,
+  "title": "Batismo de Mergulho para o Casal",
+  "description": "Mergulho entre corais e peixinhos coloridos.",
+  "price": 1200,
+  "category": "high",
+  "type": "viagem",
+  "multi": false,
+  "image_url": "assets/presentes/mergulho.jpg"
+ },
+ {
+  "id": 45,
+  "title": "Degustação de Vinhos",
+  "description": "Tour por uma vinícola com degustação.",
+  "price": 800,
+  "category": "mid",
+  "type": "viagem",
+  "multi": false,
+  "image_url": "assets/presentes/degustacao_vinho.jpg"
+ },
+ {
+  "id": 46,
+  "title": "Aula de Drinks para Dois",
+  "description": "Aprender os drinks com um bartender profissional.",
+  "price": 600,
+  "category": "mid",
+  "type": "viagem",
+  "multi": false,
+  "image_url": "assets/presentes/bartender.jpg"
+ },
+ {
+  "id": 48,
+  "title": "Passeio ao Pôr do Sol",
+  "description": "Caminhada vendo o sol se pôr no mar.",
+  "price": 400,
+  "category": "low",
+  "type": "viagem",
+  "multi": false,
+  "image_url": "assets/presentes/por_do_sol.jpg"
+ },
+ {
+  "id": 114,
+  "title": "Aula de Cerâmica para a Noiva",
+  "description": "Para a noiva fazer as próprias canecas do café da manhã.",
+  "price": 450,
+  "category": "low",
+  "type": "casa",
+  "multi": false,
+  "image_url": "assets/presentes/ceramica.jpg"
+ },
+ {
+  "id": 131,
+  "title": "Parcela da Cobertura no Noroeste",
+  "description": "Um dia a gente chega lá. Com a sua ajuda, mais rápido!",
+  "price": 15000,
+  "category": "high",
+  "type": "zoeira",
+  "multi": false,
+  "image_url": "assets/presentes/cobertura.jpg"
+ },
+ {
+  "id": 130,
+  "title": "Parcela do Apartamento no Noroeste",
+  "description": "Cada parcela conta!",
+  "price": 5000,
+  "category": "high",
+  "type": "zoeira",
+  "multi": false,
+  "image_url": "assets/presentes/apartamento.jpg"
+ },
+ {
+  "id": 132,
+  "title": "Ingresso para a Final da Champions League",
+  "description": "O Igor jura que é um presente pro casal.",
+  "price": 3000,
+  "category": "high",
+  "type": "zoeira",
+  "multi": false,
+  "image_url": "assets/presentes/champions.jpg"
+ },
+ {
+  "id": 139,
+  "title": "GTA VI pro Igor",
+  "description": "Pra ele ficar quietinho enquanto a Ana lê.",
+  "price": 450,
+  "category": "low",
+  "type": "zoeira",
+  "multi": false,
+  "image_url": "assets/presentes/gta.jpg"
+ },
+ {
+  "id": 129,
+  "title": "Box Corte de Espinhos e Rosas",
+  "description": "Pra Ana ficar quietinha enquanto o Igor joga.",
+  "price": 350,
+  "category": "low",
+  "type": "zoeira",
+  "multi": false,
+  "image_url": "assets/presentes/box_livros.jpg"
+ },
+ {
+  "id": 128,
+  "title": "Bola Oficial de Futevôlei Mikasa FT-5",
+  "description": "Pro Igor perder pra Ana na praia.",
+  "price": 569.9,
+  "category": "mid",
+  "type": "zoeira",
+  "multi": false,
+  "image_url": "assets/presentes/bola_futevolei.jpg"
+ },
+ {
+  "id": 1,
+  "title": "Salão para o Noivo",
+  "description": "Corte e barba pro Igor não parecer um náufrago no altar.",
+  "price": 150,
+  "category": "low",
+  "type": "zoeira",
+  "multi": false,
+  "image_url": "assets/presentes/barbearia.jpg"
+ },
+ {
+  "id": 2,
+  "title": "Saco de Ração para a Cachorrada",
+  "description": "Manter os cachorrinhos bem nutridos e felizes!",
+  "price": 150,
+  "category": "low",
+  "type": "matilha",
+  "multi": false,
+  "image_url": "assets/presentes/racao_special.jpg"
+ },
+ {
+  "id": 53,
+  "title": "Ração Premium pra Matilha",
+  "description": "Tigela sempre cheia: a matilha agradece!",
+  "price": 250,
+  "category": "low",
+  "type": "matilha",
+  "multi": false,
+  "image_url": "assets/presentes/tigela_racao.jpg"
+ },
+ {
+  "id": 118,
+  "title": "Comedouro Duplo de Inox",
+  "description": "Jantar chique para os cachorrinhos.",
+  "price": 350,
+  "category": "low",
+  "type": "matilha",
+  "multi": false,
+  "image_url": "assets/presentes/comedouro.jpg"
+ },
+ {
+  "id": 90,
+  "title": "Caminha para a Belinha",
+  "description": "Porque a cama dos noivos já foi dominada!",
+  "price": 700,
+  "category": "mid",
+  "type": "matilha",
+  "multi": false,
+  "image_url": "assets/presentes/caminha.jpg"
+ },
+ {
+  "id": 91,
+  "title": "Caixa de Brinquedos da Matilha",
+  "description": "Bolinhas e mordedores pra não roerem o sapato do Igor.",
+  "price": 180,
+  "category": "low",
+  "type": "matilha",
+  "multi": false,
+  "image_url": "assets/matilha/hora_de_brincar.jpg"
+ },
+ {
+  "id": 92,
+  "title": "Pote de Petiscos Vitalício",
+  "description": "Biscoitinhos para todos os 'senta' e 'dá a pata'.",
+  "price": 200,
+  "category": "low",
+  "type": "matilha",
+  "multi": false,
+  "image_url": "assets/matilha/pote_petiscos.jpg"
+ },
+ {
+  "id": 93,
+  "title": "Happy Hour da Matilha",
+  "description": "Um brinde (de água) pra cada cachorrinho.",
+  "price": 160,
+  "category": "low",
+  "type": "matilha",
+  "multi": false,
+  "image_url": "assets/matilha/happy_hour.jpg"
+ }
+]

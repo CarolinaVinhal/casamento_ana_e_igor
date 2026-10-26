@@ -1,0 +1,13 @@
+# 🔒 Cabeçalhos de segurança para Netlify / Cloudflare Pages (este arquivo é lido automaticamente).
+# Se o backend estiver em outro endereço (ex.: Render), troque a URL em "connect-src".
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://api.qrserver.com https://images.unsplash.com; media-src 'self'; frame-src https://maps.google.com https://www.google.com https://open.spotify.com; connect-src 'self' https://*.onrender.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=31536000
+
+/admin.html
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
